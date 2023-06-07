@@ -1,0 +1,58 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "bbc/info",
+	"title": "Info",
+	"description": "Display information in box style.",
+	"category": "bBlocksClone",
+	"icon": "lightbulb",
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"content": {
+			"type": "string",
+			"default": "Info Box Title"
+		},
+		"description": {
+			"type": "string",
+			"default": "This content area describes info box descriptions or details."
+		},
+		"align": {
+			"type": "string",
+			"default": "center"
+		},
+		"textColor": {
+			"type": "string"
+		},
+		"backgroundColor": {
+			"type": "string"
+		},
+		"padding": {
+			"type": "object",
+			"default": {
+				"top": "10px",
+				"right": "10px",
+				"bottom": "10px",
+				"left": "10px"
+			}
+		},
+		"margin": {
+			"type": "object",
+			"default": {
+				"top": "10px",
+				"bottom": "10px"
+			}
+		},
+		"border": {
+			"type": "object",
+			"default": {
+				"radius": "5px"
+			}
+		}
+	},
+	"textdomain": "b-blocks-clone",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}
